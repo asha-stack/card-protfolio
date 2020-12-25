@@ -1,0 +1,115 @@
+body{
+    font-family: Verdana;
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fcfcfc;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+}
+
+.site-container{
+    margin: 7rem auto;
+    max-width: calc(100% -80px);
+}
+.return-home {
+    text-decoration: none;
+    color: #2c2c2c;
+    transition: 0.3s;
+    
+}
+.return-home:hover{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+  font-weight: 900;
+  cursor: pointer;
+  color: #2c2c2c;
+  font-size: 43px;
+    
+}
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    gap: 5rem;
+}
+figure img{
+    width: 400px;
+    
+}
+
+.article-image{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+
+}
+article-image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+.article-card {
+    background:#fdfdfd;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.article-card:hover{
+    background: #ffffff;
+    box-shadow: 0 4px 20px 0 rgba(196, 196, 196, 0.618);
+    cursor: pointer;
+}
+
+.article-content{
+    padding: 2rem;
+}
+
+.article-content .card-category{
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: #33393d95;
+    display: block;
+    text-decoration: none;
+}
+.article-content .card-title {
+    margin: 1rem 0;
+    color: rgb(55, 73, 82);
+} 
+.article-content .card-excerpt {
+   font-size: 1rem;
+   line-height: 1.5rem;
+   color: rgb(46, 60, 67);
+} 
+
+@media screen and (max-width: 768px) {
+    .site-container{
+        max-width: 608px;
+    }
+    .article-card {
+        display: grid;
+        grid-template-rows: 220px 1fr;
+     
+    }
+    figure img {
+        width: 400px;
+        height: 100%;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .site-container{
+        max-width: 1156px;
+    }
+    .article-card {
+        display: grid;
+        grid-template-rows: 220px 1fr;
+     
+    }
+    
+}
